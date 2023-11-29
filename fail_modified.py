@@ -21,3 +21,7 @@ automl = AutoSklearnClassifier(time_left_for_this_task=300, per_run_time_limit=6
 automl.fit(X_train, y_train)
 y_hat = automl.predict(X_test)
 print("AutoML Accuracy", sklearn.metrics.accuracy_score(y_test, y_hat))
+
+
+# RF Accuracy 0.6525
+# AutoML Accuracy 0.6625
